@@ -33,190 +33,104 @@ void loop() {
       
 }
 
-def A:
+void A()
 {
-    dot;
-    dash  
+    dot();
+    dash();  
 }
 
-def B:
+void b()
 {
-  dash;
-  dot;
-  dot;
-  dot;
+  dash();
+  dot();
+  dot();
+  dot();
 }
 
-def C:
+void c()
 {
-  dash;
-  dot;
-  dash;
-  dot;
+  dash();
+  dot();
+  dash();
+  dot();
 }
 
-def D:
+void d()
 {
-  dash;
-  dot;
-  dot;
+  dash();
+  dot();
+  dot();
 }
 
-def E:
+void e()
 {
-  dot;
+  dot();
 }
    
-def F:
+void f()
 {
-  dot;
-  dot;
-  dash;
-  dot;
+  dot();
+  dot();
+  dash();
+  dot();
 }  
-def G:
+void g()
 {
-  dash;
-  dash;
-  dot;
+  dash();
+  dash();
+  dot();
 }
   
-def H:
+void h()
 {
-  dash;
-  dash
-  dash;
-  dash;
+  dash();
+  dash();
+  dash();
+  dash();
 }
     
-def I:
+void i()
 {
-  dash;
-  dash;
+  dash();
+  dash();
 }   
-def J:
+void j()
 {
-  dot;
-  dash;
-  dash;
-  dash;
+  dot();
+  dash();
+  dash();
+  dash();
 }  
-def K:
+void k()
 {
-  dash;
-  dot;
-  dash;
+  dash();
+  dot();
+  dash();
 }
    
-def L:
+void l()
 {
-  dot;
-  dash;
-  dot;
-  dot;
+  dot();
+  dash();
+  dot();
+  dot();
 }
     
-def M:
+void m()
 {
-  dash;
-  dash;
+  dash();
+  dash();
 }
     
-def N:
+void n()
 {
-  dash;
-  dot;
+  dash();
+  dot();
 }
     
-def O:
+void o()
 {
-  dash;
-  dash;
-  dash;
+  dash();
+  dash();
+  dash();
 }
-    
-def P:
-{
-  dot;
-  dash;
-  dash;
-  dot;
-}
-   
-def Q:
-{
-  dash;
-  dash;
-  dot;
-  dash;
-}
-
-def R:
-{
-  dot;
-  dash;
-  dash;
-  dot;
-    
-}
-
-def S:
-{
-    dot;
-    dot;
-    dot;
-}
-
-def T:
-{
-   dash;   
-}
-
-def U:
-{
-  dot;
-  dot;
-  dash;    
-}
-
-def V:
-{
-   dot;
-   dot;
-   dot;
-   dash;
-}
-
-def W:
-{
-   dot;
-   dash;
-   dash;
-}
-
-def X:
-{
-  dash;
-  dot;
-  dot;
-  dash;   
-}
-
-def Y:
-{
-   dash;
-   dot;
-   dash;
-   dash;
-}
-
-def Z:
-{
-   dash;
-   dash;
-   dot;
-   dot;
-}    
-   
-
- 
