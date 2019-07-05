@@ -6,15 +6,18 @@
 
 版本号|日期|发布人|学号
 001|2019.7.5|陈文文|18020100222
+---|---|---|---|
 
 # 7.2: 入门介绍
-. 为什么学习开源硬件
+## 为什么学习开源硬件
 >开始与巧合，终于爱好
-. 如何学习开源硬件
+
+## 如何学习开源硬件
 1 不懂就查资料
 2 多学多练
 3 坚持
-. 学习开源硬件需要用到的几个软件
+
+## 学习开源硬件需要用到的几个软件
 
 ### arduino
 ![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/arduino.png)
@@ -22,15 +25,18 @@
 ### fritzing
 ![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/fritzing.png)
 
-. 除此之外涉及的
+## 除此之外涉及的
+
 ### gitHub
 ![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/gitHub.png)
+
 ### ubuntu
 >拥有linux系统
 >学到一些linux系统的命令
 ![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/ubuntu.png)
+
 ### Tinkercad
->在线模拟电路
+#### 在线模拟电路
 ![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/Tinkercad.png)
 
 # 7.3：软件操作
