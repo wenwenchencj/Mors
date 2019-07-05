@@ -8,3 +8,5 @@
 .学习开源硬件需要用到的几个软件
 ### arduino
 ![](img/arduino.png)
+### fritzing
+![](img/frizting.png)
