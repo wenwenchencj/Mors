@@ -2,11 +2,386 @@
 >陈文文
 >2019.7.2~2019.7.5
 
+版本信息
+
+版本号|日期|发布人|学号
+001|2019.7.5|陈文文|18020100222
+
 # 7.2: 入门介绍
-.为什么学习开源硬件
-.如何学习开源硬件
-.学习开源硬件需要用到的几个软件
+. 为什么学习开源硬件
+>开始与巧合，终于爱好
+. 如何学习开源硬件
+1 不懂就查资料
+2 多学多练
+3 坚持
+. 学习开源硬件需要用到的几个软件
+
 ### arduino
-![](img/arduino.png)
+![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/arduino.png)
+
 ### fritzing
-![](img/frizting.png)
+![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/fritzing.png)
+
+. 除此之外涉及的
+### gitHub
+![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/gitHub.png)
+### ubuntu
+>拥有linux系统
+>学到一些linux系统的命令
+![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/ubuntu.png)
+### Tinkercad
+>在线模拟电路
+![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/Tinkercad.png)
+
+# 7.3：软件操作
+
+## arduino安装
+
+## ardiuno文档
+
+## ardiuno基本操作
+   1 一些基本函数的用法
+   1.1 setup
+   1.2 loop
+   1.3 morse
+   
+### ardiuno类库操作
+   2 应该掌握的库
+   2.1 math库
+   2.2 random库
+   2.3 serial库
+   
+## 实例：morse电码
+   1.老师给出莫尔斯电码背景
+   2.将自己名字转成莫尔斯电码
+   3.课后完成莫尔斯电码对于小写字母，逗号，回车的转化
+#### morse.h
+...c [
+void setup()
+{
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  if(Serial.available()>0)
+  {
+    if (Serial.read()=='a')
+    {
+      dot();
+      dash();
+    }
+    if (Serial.read()=='b')
+    {
+      b();
+    }
+    if (Serial.read()=='c')
+    {
+      c();
+    }if (Serial.read()=='d')
+    {
+      d();
+    }if (Serial.read()=='e')
+    {
+      e();
+    }if (Serial.read()=='f')
+    {
+      f();
+    }if (Serial.read()=='g')
+    {
+      g();
+    }if (Serial.read()=='h')
+    {
+      h();
+    }if (Serial.read()=='i')
+    {
+      i();
+    }if (Serial.read()=='j')
+    {
+      j();
+    }if (Serial.read()=='k')
+    {
+      k();
+    }if (Serial.read()=='l')
+    {
+      l();
+    }if (Serial.read()=='m')
+    {
+      m();
+    }if (Serial.read()=='n')
+    {
+      n();
+    }if (Serial.read()=='o')
+    {
+      o();
+    }if (Serial.read()=='p')
+    {
+      p();
+    }if (Serial.read()=='q')
+    {
+      q();
+    }if (Serial.read()=='r')
+    {
+      r();
+    }if (Serial.read()=='s')
+    {
+      s();
+    }if (Serial.read()=='t')
+    {
+      t();
+    }if (Serial.read()=='u')
+    {
+      u();
+    }if (Serial.read()=='v')
+    {
+      v();
+    }if (Serial.read()=='w')
+    {
+      w();
+    }if (Serial.read()=='x')
+    {
+      x();
+    }if (Serial.read()=='y')
+    {
+      y();
+    }if (Serial.read()=='z')
+    {
+      z();
+    }
+  }
+}
+
+void dot()
+  {
+      digitalWrite(13,HIGH);
+      delay(250);
+      digitalWrite(13,LOW);
+      delay(250);
+    }
+
+void dash()
+   {
+       digitalWrite(13,HIGH);
+       delay(250*4);
+       digitalWrite(13,LOW);
+       delay(250);
+    }
+
+void c_space()
+    {
+        digitalWrite(13,LOW);
+        delay(250*3);
+      }
+
+void w_space()
+      {
+        digitalWrite(13,LOW);
+        delay(250*7);
+        }
+
+void b()
+{
+  dash();
+  dot();
+  dot();
+  dot();
+}
+
+void c()
+{
+  dash();
+  dot();
+  dash();
+  dot();
+}
+
+void d()
+{
+  dash();
+  dot();
+  dot();
+}
+
+void e()
+{
+  dot();
+}
+   
+void f()
+{
+  dot();
+  dot();
+  dash();
+  dot();
+}  
+void g()
+{
+  dash();
+  dash();
+  dot();
+}
+  
+void h()
+{
+  dash();
+  dash();
+  dash();
+  dash();
+}
+    
+void i()
+{
+  dash();
+  dash();
+}   
+void j()
+{
+  dot();
+  dash();
+  dash();
+  dash();
+}  
+void k()
+{
+  dash();
+  dot();
+  dash();
+}
+   
+void l()
+{
+  dot();
+  dash();
+  dot();
+  dot();
+}
+    
+void m()
+{
+  dash();
+  dash();
+}
+    
+void n()
+{
+  dash();
+  dot();
+}
+    
+void o()
+{
+  dash();
+  dash();
+  dash();
+}
+    
+void p()
+{
+  dot();
+  dash();
+  dash();
+  dot();
+}
+   
+void q()
+{
+  dash();
+  dash();
+  dot();
+  dash();
+}
+
+void r()
+{
+  dot();
+  dash();
+  dash();
+  dot();
+    
+}
+
+void s()
+{
+    dot();
+    dot();
+    dot();
+}
+
+void t()
+{
+   dash();   
+}
+
+void u()
+{
+  dot();
+  dot();
+  dash();    
+}
+
+void v()
+{
+   dot();
+   dot();
+   dot();
+   dash();
+}
+
+void w()
+{
+   dot();
+   dash();
+   dash();
+}
+
+void x()
+{
+  dash();
+  dot();
+  dot();
+  dash();   
+}
+
+void y()
+{
+   dash();
+   dot();
+   dash();
+   dash();
+}
+
+void z()
+{
+   dash();
+   dash();
+   dot();
+   dot();
+}    
+
+  ...
+# 7.4 元器件以及电路图
+
+## 使用在线模拟网站：
+<link rel="stylesheet" href="https://www.tinkercad.com/dashboard"/>
+
+## 模拟电路图
+### 1.摩尔电码
+![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/QQ%E5%9B%BE%E7%89%8720190705114523.png)
+### 2.单个数码管
+![image](https://github.com/wenwenchencj/7.5.work/blob/master/picture/shumaguan.png)
+
+## 七位编译器的实验
+
+## CD4511使用
+
+# 7.5 总结 
+
+...mermaid
+sequebceDiagram
+  Alice.>>jihn:Hellow,
+  how are you?
+  John..>Alice:Great!
+ ...
+ 
+ $$x_{balabala}^{blabla}$$
